@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap">
+    <title>www.PopularSocialMediasites.com</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --navbar-height:57px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    width:100%;
+    display:flex;
+    position:absolute;
+    top:0px;
+}
+
+#navbar img{
+    width:58px;
+    padding:7px;
+}
+
+#navbar ul{
+    display:flex;
+    margin:20px;
+}
+
+#navbar ul li{
+    list-style:none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding:3px 25px;
+    display:block;
+    color:white;
+    font-size:1.2rem;
+    font-family:'Bree Serif',serif;
+}
+
+#navbar::before{
+    content:"";
+    background:black;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.9;
+}
+
+#navbar ul li a:hover{
+    cursor: pointer;
+    background:white;
+    color:black;
+    border-radius:23px;
+}
+
+#Home{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size:1.2rem;
+    color:white;
+    width:100%;
+    height:360px;
+    font-family:'Bree Serif',serif;
+}
+
+#Home::before{
+    content:"";
+    background:url("https://musicindustryhowtoimages.s3.amazonaws.com/wp-content/uploads/2018/08/06001731/best-social-media-platforms.jpg") no-repeat center/cover;
+    position:absolute;
+    width:100%;
+    height:360px;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0.9;
+}
+
+#Home p{
+    margin:0px 15px;
+    padding:0px 40px;
+}
+
+.h-primary{
+    padding:12px;
+     text-align:center;
+     font-size:2.8rem;
+     color:white;
+     font-family:'Bree Serif',serif;
+}
+
+.btn{
+    padding:4px;
+    margin:0px 20px;
+    border-radius: 23px;
+    background-color:brown;
+    color:white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family:'Bree Serif',serif;
+}
+ 
+.center
+{
+    text-align:center;
+    color:black;
+    font-family: 'Bree Serif',serif;
+}
+
+#services{
+    height:250px;
+    align-items:center;
+    justify-content: center;
+}
+
+.Services{
+    height:147px;
+    display:flex;
+    margin:0px 50px;
+}
+
+.box{
+    width:30%;
+    height:138px;
+    text-align:center;
+}
+
+.box img{
+    width:112px;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+    padding:2px;
+}
+
+.box a p{
+    margin:0px 116px;
+}
+
+.box a p:hover{
+    background:black;
+    color:white;
+    border-radius:23px;
+    opacity:0.7;
+}
+
+#owners{
+    height:555px;
+}
+
+#owners::before{
+    content:"";
+    position:absolute;
+    background:url('https://www.pngkit.com/png/detail/477-4773623_round-social-media-icons-png-svg-black-and.png') no-repeat center/cover;
+    width:100%;
+    height:555px;
+    z-index:-1;
+    opacity:0.2;
+}
+
+.owner{
+    height:456px;
+    display:flex;
+    margin:0px 50px;
+}
+
+.Box{
+    width:20%;
+    height:453px;
+    border:2px solid red;
+    margin:0px 33px;
+    border-radius:25px;
+    background-color: rgb(227, 207, 207);
+}
+
+.Box img{
+    width:100px;
+    margin:auto;
+    display:block;
+}
+
+.h-secondary{
+    font-size:1.2rem;
+    font-family:'Bree Serif',serif;
+}
+
+#contact{
+    height:500px;
+}
+
+#Contact{
+    height:414px;
+    font-family: 'Bree Serif',serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact input, #Contact textarea{
+    width:100%;
+    padding:0.5rem;
+}
+
+#Contact form{
+    width:40%;
+}
+
+#contact::before{
+    content:"";
+    position:absolute;
+    background: url("https://cdn.pixabay.com/photo/2014/08/24/19/01/apps-426559__340.jpg") no-repeat center/cover;
+    width:100%;
+    height:500px;
+    z-index:-1;
+    opacity:0.5;
+}
+
+.footer{
+    background:black;
+    color:white;
+    font-family: 'Bree Serif',serif;
+    text-align: center;
+}
+
+@media(Max-Width:1262px)
+{
+    .box a p {
+    margin: 0px 68px;
+}
+
+.box{
+    width: 20%;
+    height: 112px;
+    margin: 3px 28px;
+}
+
+.Box p{
+    font-size: 0.8rem;
+}
+
+.Box{
+    height:425px;
+}
+
+.font{
+    font-size:1.5rem;
+}
+}
+
+@media(Max-Width:1100px)
+{
+    .box a p{
+    margin: 0px 50px;
+    font-size:0.6rem
+}
+
+.box{
+    margin:3px 20px;
+}
+
+.box img{
+    width:70px;
+}
+
+.h-primary{
+    font-size:2rem;
+}
+
+.Box p{
+    font-size: 0.5rem;
+}
+
+.Box {
+    height: 357px;
+}
+
+.Box img{
+   width:70px;
+}
+#owners {
+    height: 450px;
+}
+
+.owner {
+    height: 360px;
+}
+
+.Box {
+    height: 330px;
+}
+
+.font{
+    font-size: 1rem;
+}
+
+.h-secondary{
+    font-size: 0.5rem;
+}
+
+.Services{
+    height:100px;
+    margin:opx 37px;
+}
+
+#services{
+    height:169px;
+}
+}
+
+@media(Max-Width:800px)
+{
+    #navbar{
+    align-items: center;
+    flex-direction: column;
+}
+
+#navbar img{
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li a{
+      font-size: 1rem;
+}
+
+.h-primary{
+    font-size:1.2rem;
+}
+
+.h-secondary{
+    font-size:0.8rem;
+}
+
+#Home{
+    height:505px;
+}
+
+#Home p{
+    font-size: 1rem;
+}
+#Home::before{
+    height:505px;
+}
+
+.Box img {
+    width: 60px;
+}
+
+.box {
+    width: 17%;
+    margin:3px 28px;
+}
+
+.box img {
+    width: 50px;
+}
+
+.box a p {
+    margin: 0px 25px;
+}
+
+.font{
+    font-size: 0.6rem;
+}
+}
+
+@media(Max-Width:665px)
+{
+    #navbar ul li a{
+    font-size:0.5rem;
+    padding:3px 22px;
+}
+
+#services{
+    height:270px;
+}
+
+.Services{
+
+    flex-wrap:wrap;
+    margin:0px 85px;
+    height:236px;
+     
+}
+
+.font{
+    font-size: 0.7rem;
+}
+
+.h-secondary{
+    font-size:0.4rem;
+}
+
+.box{
+    width:30%;
+    margin:3px 20px;
+    height:66px;
+}
+
+.box img{
+    width:40px;
+}
+
+.box a p{
+    margin:0px 8px;
+}
+
+.Box img{
+    width:30px;
+}
+
+.Box{
+    width:37%;
+    margin:3px 18px;
+    height:309px;
+}
+
+.Box p{
+    font-size: 0.5rem;
+}
+
+.h-primary{
+    font-size: 1rem;
+}
+
+#Home p{
+    font-size: 0.7rem;
+}
+
+.btn{
+    font-size: 0.7rem;
+}
+
+#Home{
+    height:476px;
+}
+
+#Home::before{
+    height:476px;
+}
+
+.footer{
+    font-size:0.4rem;
+}
+
+#Contact form div label{
+    font-size:0.8rem;
+}
+
+.owner{
+    flex-wrap:wrap;
+    height:640px;
+    margin:0px 32px;
+}
+
+#owners{
+    height:702px;
+}
+
+.font{
+    font-size: 0.7rem;
+}
+}
+
+@media(Max-Width:371px)
+{
+.Box{
+    width:32%;
+    margin:3px 17px;
+}
+
+.owner{
+    margin:0px 34px;
+}
+
+.Services{
+    margin:0px 15px;
+    padding:0px 38px;
+}
+
+.box{
+    width:35%;
+    margin:7px 13px;
+}
+}
+</style>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <img src="https://renovo.uk.com/wp-content/uploads/2017/12/Choosing-the-right-social-media-platform-for-your-business.jpg"
+                alt="img">
+        </div>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#sevices">Services</a></li>
+            <li><a href="#owners">Owner Info</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="Home">
+        <h1 class="h-primary">Welcome to My Website</h1>
+        <p>This is one of the best website which can save your time which you waste to go
+            on different social media plateforms by searching different links.
+            From this website you can accsss any of the social media plateforms without
+            going on to the multiple sites.</p>
+        <button class="btn">Start Now</button>
+    </section>
+
+    <section id="services">
+        <h1 class="h-primary center">Services</h1>
+        <div class="Services">
+            <div class="box">
+                <a href="https://www.youtube.com"><img
+                        src="https://play-lh.googleusercontent.com/Qolm5gr9jnabjk-0z79srjYC1XPVExribNz5kbDmGJeEtmRlo0UQoQEIkKMHRyt5paw=w240-h480-rw"
+                        alt="Youtube">
+                    <p>YouTube</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://www.instagram.com"><img
+                        src="https://cdn-images-1.medium.com/max/1200/1*CPgwLHR6jno_tOmF0--7eg.jpeg" alt="instagram">
+                    <p>Intagram</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://www.facebook.com"><img
+                        src="https://cdn4.iconfinder.com/data/icons/social-icon-4/842/facebook-512.png" alt="Facebook">
+                    <p>facebook</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://www.twitter.com"><img
+                        src="https://cdn.pixabay.com/photo/2015/05/22/11/51/twitter-778708_960_720.png" alt="twitter">
+                    <p>twitter</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="owners">
+        <h1 class="h-primary center">Owner Info</h1>
+        <div class="owner">
+            <div class="Box">
+                <h1 class="h-primary center font">youtube</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qOkoPF1-RcClrFHdLPc1m6DfsGibL-TJRw&usqp=CAU"
+                    alt="Steve Chen">
+                <h2 class="h-secondary center">Steve Chen</h2>
+                <p class="center">YouTube, Web site for sharing videos. It was registered on February 14, 2005, by Steve
+                    Chen, Chad Hurley, and Jawed Karim, three former employees of the American e-commerce company
+                    PayPal.</p>
+            </div>
+            <div class="Box">
+                <h1 class="h-primary center font">Instagram</h1>
+                <img src="https://variety.com/wp-content/uploads/2017/11/kevin-systrom-instagram-ceo-2.jpg"
+                    alt="Kevin Systrom">
+                <h2 class="h-secondary center">Kevin Systrom</h2>
+                <p class="center">Kevin Systrom is an American computer programmer and entrepreneur. He co-founded Instagram, the
+                    world's largest photo sharing website, along with Mike Krieger. Systrom was included on the list of
+                    America's Richest Entrepreneurs Under 40 2016.</p>
+            </div>
+            <div class="Box">
+                <h1 class="h-primary center font">facebook</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
+                    alt="Mark Zuckerberg">
+                <h2 class="h-secondary center">Mark Zuckerberg</h2>
+                <p class="center">Mark Zuckerberg is famous for being cofounder and chief executive officer of Facebook,
+                    the world's
+                    largest social network Web site. He founded the service in 2004 while he was at Harvard University
+                    with four of his fellow students.</p>
+            </div>
+            <div class="Box">
+                <h1 class="h-primary center font">twitter</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVK2pEgN7xAV7MBbLG1Jf__n44REXzVDFvjQ&usqp=CAU"
+                    alt="Jack Dorsey">
+                <h2 class="h-secondary center">Jack Dorsey</h2>
+                <p class="center">Twitter was created by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams in March
+                    2006 and launched in July of that year. By 2012, more than 100 million users posted 340 million
+                    tweets a day, and the service handled an average of 1.6 billion search queries per day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+            <h1 class="h-primary center color">Contact Us</h1>
+            <div id="Contact">
+            <form action="">
+
+                <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form">
+                <label for="Email">Email:</label>
+                <input type="text" placeholder="Enter You Mail Id">
+                </div>
+
+                <div class="form">
+                <label for="Mobile No.">Mobile:</label>
+                <input type="text" placeholder="Enter Mobile Number">
+                </div>
+
+                <div class="form">
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+            </div>
+    </section>
+
+    <footer class="footer">
+        copyright &copy; All rights reserved!
+    </footer>
+</body>
+
+</html>
